@@ -28,11 +28,14 @@ Chain LFI with file uploads to get RCE!
    cd LocalFunInclusion
 
 2. Copy the lab files into your Apache document root (example for Debian/Ubuntu):
+   
+   ```bash
    sudo mkdir -p /var/www/html/shoppix
    sudo cp -r * /var/www/html/shoppix/
    sudo chown -R www-data:www-data /var/www/html/shoppix
 
-3. Enable read permissions on /var/log/apache2/access.log (for log poisoning):
+4. Enable read permissions on /var/log/apache2/access.log (for log poisoning):
+   ```bash
    sudo chown root:www-data /var/log/apache2/access.log
    sudo chmod 0640 /var/log/apache2/access.log
 
