@@ -1,0 +1,1 @@
+Try to upload a JPEG file with some PHP in its metadata, and then include it with LFI!
